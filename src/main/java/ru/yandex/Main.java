@@ -16,7 +16,7 @@ public class Main {
                     stepTracker.addNewNumberStepsPerDay();
                     break;
                 case 2:
-                    System.out.println("Выполняется команда 2");
+                    stepTracker.changeStepGoal();
                     break;
                 case 3:
                     System.out.println("Выполняется команда 3");
