@@ -1,7 +1,8 @@
 package ru.yandex;
 
 public class MonthData {
-    int[] days = new int[30];
+    static final int DAYS_IN_MONTH = 30;
+    int[] days = new int[DAYS_IN_MONTH];
 
     void printDaysAndStepsFromMonth() {
         for (int i = 0; i < days.length; i++) {
