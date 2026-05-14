@@ -1,4 +1,5 @@
 package ru.yandex;
 
-public class MonthData {
+class MonthData {
+    int[] days = new int[30];
 }
