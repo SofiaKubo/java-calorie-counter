@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        StepTracker stepTracker = new StepTracker(scanner);
 
         while (true) {
             printMenu();
@@ -12,7 +13,7 @@ public class Main {
             int command = scanner.nextInt();
             switch (command) {
                 case 1:
-                    System.out.println("Выполняется команда 1");
+                    stepTracker.addNewNumberStepsPerDay();
                     break;
                 case 2:
                     System.out.println("Выполняется команда 2");
