@@ -49,6 +49,7 @@ public class StepTracker {
 
         MonthData monthData = monthsData[month - 1];
         monthData.days[day - 1] = steps;
+        System.out.println("Данные сохранены.");
     }
 
     void changeStepGoal() {
@@ -61,6 +62,7 @@ public class StepTracker {
         }
 
         goalByStepsPerDay = steps;
+        System.out.println("Цель обновлена.");
     }
 
     void printStatistic() {
@@ -86,10 +88,7 @@ public class StepTracker {
         System.out.printf("\nПройденная в этом месяце дистанция: %d км\n", converter.convertToKm(sumSteps));
 
         System.out.printf("\nКоличество сожжённых в этом месяце килокалорий: %d ккал\n", converter.convertStepsToKilocalories(sumSteps));
-        System.out.printf(
-                "\nЛучшая серия в этом месяце: %d дней%n",
-                monthData.bestSeries(goalByStepsPerDay)
-        );
+        System.out.printf("\nЛучшая серия в этом месяце: %d%n", monthData.bestSeries(goalByStepsPerDay));
 
         System.out.println();
     }
