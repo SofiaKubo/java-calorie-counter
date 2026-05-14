@@ -19,7 +19,7 @@ public class Main {
                     stepTracker.changeStepGoal();
                     break;
                 case 3:
-                    System.out.println("Выполняется команда 3");
+                    stepTracker.printStatistic();
                     break;
                 case 4:
                     System.out.println("Программа завершена.");
